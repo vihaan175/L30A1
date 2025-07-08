@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h2>My Favorite Cartoon</h2>
+    <button onclick="showCartoon()">Click To See</button>
+    <p id="cartoonInfo"></p>
+
+    <script>
+        // JSON-like object
+        const myCartoon = {
+            name: "Ippo",
+            type: "Boxer",
+            show: "Hajime No Ippo"
+        };
+        
+        function showCartoon() {
+            document.getElementById("cartoonInfo").innerText =
+                myCartoon.name + " is a " + myCartoon.type + " from " + myCartoon.
+                show + "!";
+        }
+    </script>
+</html>
+
+</html>
